@@ -30,7 +30,12 @@ body{
     flex-wrap: wrap;
 }
 
+section{
+    padding: 2rem 0
+    ;
+}
 
+/* header */
 header {
     background-color: var(--rsp-heanvenly);
     height: 50px;
@@ -62,6 +67,74 @@ nav a {
 }
 
 
+/* section uno */
+
+.services [class^="col"]{
+    min-height: 250px;
+    background-color: var(--rsp-light-heanvenly);
+    border-radius: 10px;
+}
+
+.service {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.info{
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.img{
+    width: 50%;
+    height: 100%;
+}
+h3{
+    
+}
+.apple{
+    text-decoration: none;
+    color: white;
+    background-color: var(--rsp-heanvenly);
+    padding: 5px 35px;
+    border-radius: 50px; 
+}
+.service i{
+    color: var(--rsp-heanvenly);
+    font-size: 4rem;
+}
+.services h3{
+    color: var(--rsp-heanvenly);
+    padding: 1rem 0rem;
+}
+.col-info{
+    display: flex;
+}
+.col-info img{
+    max-width: 250px;
+    vertical-align: bottom;
+}
+.col-info .img{
+    align-self: flex-end;
+}
+
+.col-8 {
+ width: calc(100% / 12 * 8 - 1rem);
+ margin: 0 0.5rem 1rem;
+}
+.col-4 {
+    width: calc(100% / 12 * 4 - 1rem);
+    margin: 0 0.5rem 1rem;
+}
+
 @media screen and (max-width: 768px) {
     .sandwich{
         display: block;
@@ -69,4 +142,8 @@ nav a {
     .menu{
         display: none;
     }
+    .col-info {
+        flex-direction: column;
+    }
+    
 }
