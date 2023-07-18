@@ -149,6 +149,15 @@ nav a {
     }
     
 }
+@media screen and (max-width: 480px){
+    .services [class^="col"]{
+        width: 100%;
+    }
+    .services{
+        flex-direction: column;
+    }
+}
+
 
 /* section due */
 
@@ -196,6 +205,9 @@ nav a {
     .col-info .img {
         align-self: flex-start;
     }
+    .info{
+        width: 100%;
+    }
     .violetuno .row {
         flex-direction: column;
     }
@@ -206,5 +218,58 @@ nav a {
     .develop-card {
         width: 100%;
     padding: 40px 0px;
+    }
+}
+
+/* partners */
+
+.info-partners{
+    text-align: center;
+}
+h2{
+    color: var(--rsp-primary);
+    padding: 20px;
+}
+
+.partner{
+    width: 100%;
+    min-height: 150px;
+    background-color: var(--rsp-primary);
+    margin: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.foto{
+    width: 200px;
+    aspect-ratio: 1 / 1;
+    margin: 20px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.test1{
+    background-image: url(img/testimonial1.jpg);
+}
+.test2{
+    background-image: url(img/testimonial2.jpg);
+}
+.test3{
+    background-image: url(img/testimonial3.jpg);
+}
+.info-partner h4{
+    margin: 20px 0px 10px;
+}
+
+@media screen and (max-width: 480px){
+    .partner{
+        flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+    margin: 20px 0px;
     }
 }
