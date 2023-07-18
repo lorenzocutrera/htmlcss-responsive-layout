@@ -159,7 +159,7 @@ nav a {
 }
 
 
-/* section due */
+/* section due violetuno */
 
 .strategic {
     width: 50%;
@@ -271,5 +271,66 @@ h2{
     text-align: center;
     padding: 1rem;
     margin: 20px 0px;
+    }
+}
+
+/* violetdue */
+.violetdue{
+    background-color: var(--rsp-primary);
+}
+.violetdue h2{
+    color: white;
+    text-align: center;
+}
+/* .violetdue .col-4{
+    background-color: white;
+    min-height: 300px;
+    min-width: 290px;
+    border-radius: 20px;
+    color: var(--rsp-primary);
+} */
+
+.coll{
+    width: calc(100% / 3 - 20px);
+    min-height: 350px;
+    background-color: white;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+
+.coll h3{
+    font-size: 60px;
+    padding: 10px 0;
+}
+
+.info-coll p {
+    color: #959595;
+    padding: 10px 0px 20px;
+    font-size: 15px;
+}
+
+.info-coll {
+    padding: 20px;
+    color: var(--rsp-primary);
+}
+
+.info-coll a{
+    text-decoration: none;
+    background-color: var(--rsp-primary);
+    padding: 5px 50px;
+    color: white;
+    border-radius: 20px;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .coll{
+        width: calc(100% / 2 - 20px);
+    }
+}
+@media screen and (max-width: 480px) {
+    .coll{
+        width: 100%;
     }
 }
