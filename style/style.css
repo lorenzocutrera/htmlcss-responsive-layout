@@ -50,6 +50,7 @@ nav{
     justify-content: space-between;
 }
 
+
 nav a {
     text-decoration: none;
     color: white;
@@ -226,7 +227,7 @@ nav a {
 .info-partners{
     text-align: center;
 }
-h2{
+.info-partners h2{
     color: var(--rsp-primary);
     padding: 20px;
 }
@@ -331,6 +332,78 @@ h2{
 }
 @media screen and (max-width: 480px) {
     .coll{
+        width: 100%;
+    }
+}
+
+
+/* about us */
+.left-about{
+    width: calc(70% - 20px);
+    margin: 10px;
+    min-height: 300px;
+}
+.left-about h2{
+    padding: 30px 0;
+    font-size: 50px;
+    color: var(--rsp-primary);
+}
+
+.left-about p{
+padding: 20px 0;
+line-height: 30px;
+}
+
+.right-about{
+    width: calc(30% - 20px);
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.abau{
+    background-image: url(img/about.jpg);
+    position: relative;
+}
+
+.right-about h3{
+    color: var(--rsp-primary);
+    padding: 30px 0;
+}
+
+.fa-quote-left{   
+    position: absolute;
+    right: 0px;
+    color: var(--rsp-primary);
+    font-size: 50px;
+}
+
+.about a{
+    text-decoration: none;
+    background-color: var(--rsp-primary);
+    text-align: center;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .left-about{
+        width: calc(60% - 20px);
+    }
+    .right-about{
+        width: calc(40% - 20px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about .row{
+        flex-direction: column;
+    }
+    .left-about{
+        width: 100%;
+    }
+    .right-about{
         width: 100%;
     }
 }
