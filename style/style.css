@@ -31,8 +31,11 @@ body{
 }
 
 section{
-    padding: 2rem 0
-    ;
+    padding: 4rem 0;
+}
+
+.violetuno{
+    background-color: var(--rsp-primary);
 }
 
 /* header */
@@ -97,9 +100,8 @@ nav a {
     width: 50%;
     height: 100%;
 }
-h3{
-    
-}
+
+
 .apple{
     text-decoration: none;
     color: white;
@@ -146,4 +148,63 @@ h3{
         flex-direction: column;
     }
     
+}
+
+/* section due */
+
+.strategic {
+    width: 50%;
+    padding: 40px 10px 40px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+}
+.strategic img{
+    width: 100%;
+}
+
+.develop-card{
+    width: 50%;
+    padding: 40px 80px 40px 10px;
+
+    display: flex;
+    align-items: flex-end;
+}
+.develop{
+    padding: 40px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    border-radius: 50px;
+}
+.develop img{
+    width: 250px;
+    padding: 20px;
+}
+
+.fa-arrow-down{
+    background-color: var(--rsp-primary);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    .col-info .img {
+        align-self: flex-start;
+    }
+    .violetuno .row {
+        flex-direction: column;
+    }
+    .strategic {
+        width: 100%;
+        padding: 40px 0px;
+    }
+    .develop-card {
+        width: 100%;
+    padding: 40px 0px;
+    }
 }
